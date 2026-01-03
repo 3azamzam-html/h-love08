@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+    <meta charset="UTF-8" />
+    <title>لحبيبة</title>
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+    <div class="container">
+
+        <div class="section">
+            <h2>رسالة حبيبة</h2>
+            <button id="msgBtn">عرض الرسالة</button>
+            <p id="messageDisplay" class="message pink"></p>
+        </div>
+
+        <div class="section">
+            <h2>كلام حلو لحبيبة</h2>
+            <button id="wordsBtn">عرض الكلام</button>
+            <p id="wordsDisplay" class="message red"></p>
+        </div>
+
+        <div class="section" id="quizSection">
+            <h2>مين حبيبة بابا؟</h2>
+            <input type="text" id="quizInput" placeholder="اكتب الاجابة هنا..." autocomplete="off" />
+            <button id="quizBtn">جاوب</button>
+            <p id="quizResult" class="message"></p>
+        </div>
+
+        <div class="section" id="visitCountSection">
+            <h2>عدد الزيارات</h2>
+            <p id="visitCount" class="message"></p>
+        </div>
+
+    </div>
+
+    <audio id="tapSound" src="https://assets.mixkit.co/sfx/preview/mixkit-game-click-1114.mp3"></audio>
+    <audio id="bgMusic" src="https://cdn.pixabay.com/download/audio/2022/03/23/audio_03ccde84df.mp3?filename=love-song-11835.mp3" loop></audio>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
