@@ -1,0 +1,157 @@
+body {
+    margin: 0;
+    background: black;
+    color: white;
+    font-family: Arial;
+}
+
+.container {
+    width: 90%;
+    max-width: 600px;
+    margin: auto;
+    padding-top: 20px;
+}
+
+.section {
+    background: #111;
+    margin-bottom: 30px;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+h2 {
+    color: #ff69b4;
+}
+
+button {
+    background: #ff2d55;
+    border: none;
+    color: white;
+    padding: 10px 25px;
+    border-radius: 20px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+input {
+    padding: 10px;
+    border-radius: 20px;
+    border: none;
+    font-size: 16px;
+    width: 80%;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.message {
+    margin-top: 15px;
+    min-height: 80px;
+}
+
+.pink {
+    color: pink;
+}
+
+.red {
+    color: red;
+}
+
+.correct {
+    background: green;
+    color: white;
+}
+
+.incorrect {
+    background: red;
+    color: white;
+}
+
+
+/* الصور */
+
+#imgBox {
+    margin-top: 200px;
+    display: none;
+}
+
+#galleryImg {
+    width: 100%;
+    max-width: 320px;
+    border-radius: 15px;
+    box-shadow: 0 0 25px pink;
+    animation: fade 0.4s ease;
+}
+
+@keyframes fade {
+    from {
+        opacity: 0;
+        transform: scale(0.9);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+
+/* كريدت */
+
+#creditBtn {
+    position: fixed;
+    bottom: 5px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: transparent;
+    color: rgba(255, 255, 255, 0.3);
+    border: none;
+    font-size: 13px;
+    cursor: pointer;
+}
+
+body {
+    margin: 0;
+    background: black;
+    color: white;
+    font-family: Arial, sans-serif;
+}
+
+.box {
+    width: 90%;
+    max-width: 400px;
+    margin: 50px auto;
+    background: #111;
+    padding: 20px;
+    border-radius: 15px;
+    text-align: center;
+}
+
+h2 {
+    color: pink;
+    margin-bottom: 20px;
+}
+
+button {
+    width: 100%;
+    padding: 12px;
+    border: none;
+    border-radius: 10px;
+    background: #ff2f68;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+button:active {
+    transform: scale(0.97);
+}
+
+#videoBox {
+    display: none;
+    margin-top: 20px;
+}
+
+#videoBox video {
+    width: 100%;
+    border-radius: 12px;
+}
