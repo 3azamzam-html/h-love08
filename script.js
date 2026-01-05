@@ -142,4 +142,29 @@ quizInput.addEventListener("input", () => {
     quizResult.textContent = "";
     quizResult.classList.remove("correct", "incorrect");
     document.body.style.backgroundColor = "#000";
+
 });
+function updateDaysCounter() {
+  // تاريخ البداية: 6 / 12 / 2025
+  const startDate = new Date(2025, 11, 6); // الشهر 11 = ديسمبر
+  const today = new Date();
+
+  // نصفر الوقت عشان الحساب يكون مظبوط
+  startDate.setHours(0,0,0,0);
+  today.setHours(0,0,0,0);
+
+  const diffTime = today - startDate;
+  const diffDays = Math.floor(diffTime / (1000 * 60 * 60 * 24));
+
+  const daysCounter = document.getElementById("daysCounter");
+
+  if (diffDays < 0) {
+    daysCounter.textContent = "لسه ما بدأناش 💖";
+  } else if (diffDays === 0) {
+    daysCounter.textContent = "أول يوم 💕";
+  } else {
+    daysCounter.textContent = `${diffDays} يوم حب`;
+  }
+}
+
+updateDaysCounter();
