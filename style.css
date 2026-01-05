@@ -133,7 +133,13 @@ input[type="text"] {
 
 @keyframes fall {
     to {
+        
         transform: translateY(110vh);
         opacity: 0;
     }
+
+}
+#daysCounter {
+  font-size: 28px;
+  font-weight: bold;
 }
